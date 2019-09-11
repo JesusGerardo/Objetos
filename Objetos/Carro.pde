@@ -1,4 +1,4 @@
-class Carro{
+class Carro implements Interfaz{
   
   private float h;
   private float w;
@@ -11,7 +11,7 @@ class Carro{
   private Llanta llantaDer;
   private Ventana[] ventana;
   
-  public Camion(float x, float y, float w, float h, int _color, float v){
+  public Carro(float x, float y, float w, float h, int _color, float v){
     this.x = x;
     this.y = y;
     this.h = h;
@@ -29,7 +29,7 @@ class Carro{
     }
     
   }
-  
+  public void arrastrar(){}
   public void dibujar(){
     carcasa.dibujar();
     llantaIzq.dibujar();
