@@ -10,4 +10,5 @@ void class Circulo implements Interfaz{
     this.radius = radius;
     this._color = _color;
   }
+  
 }
