@@ -1,4 +1,4 @@
-void class Circulo implements Interfaz{
+public class Circulo extends Figura implements Interfaz{
   public void arrastrar();
   private float x;
   private float y;
@@ -13,4 +13,5 @@ void class Circulo implements Interfaz{
   public void dibujar(){
   ellipse(x, y, radius, radius);  
   }
+  public void arrastrar(){}
 }
