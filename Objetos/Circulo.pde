@@ -10,5 +10,7 @@ void class Circulo implements Interfaz{
     this.radius = radius;
     this._color = _color;
   }
-  
+  public void dibujar(){
+  ellipse(x, y, radius, radius);  
+  }
 }
