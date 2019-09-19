@@ -24,7 +24,6 @@ class Estrella{
     }
     endShape(CLOSE);
   }
-  
   public void dibujar(){
     pushMatrix();
     translate(width*x, height*y);
