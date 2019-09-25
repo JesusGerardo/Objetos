@@ -1,4 +1,4 @@
-public class Circulo extends Figura implements Interfaz{
+public class Circulo extends Figura{
   Circulo(float x, float y, float radius, int _color){
     super.x = x;
     super.y = y;
@@ -11,16 +11,13 @@ public class Circulo extends Figura implements Interfaz{
     fill(_color);
     ellipse(x, y, w, h);  
   }
-  public void estaDentro(){
+  public boolean estaDentro(){
     float dx = (x - mouseX);
     float dy = (y - mouseY);
     float d = sqrt(dx*dx + dy*dy);
     if(d <= w/2.0)
-      cambiarColor(true);
-      //delay(500);
+      return true;
     else
-      cambiarColor(false);
-      //delay(500);
+      return false;
   }
-  public void arrastrar(boolean e){}
 }
