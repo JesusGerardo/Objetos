@@ -15,9 +15,8 @@ public class Rectangulo extends Figura implements Interfaz{
     float dx = abs(x - mouseX);
     float dy = abs(y - mouseY);
     if(dx <= w/2.0 && dy <= h/2.0)
-      cambiarColor(true);
+      return true;
     else
-      cambiarColor(false);
+      return false;
   }
-  public void arrastrar(boolean e){}
 }
