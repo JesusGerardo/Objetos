@@ -1,3 +1,4 @@
 public interface Interfaz{
-  public void arrastrar(boolean estado);
+  public void arrastra(boolean e);
+  public void empiezaArrastre(boolean e);
 }
