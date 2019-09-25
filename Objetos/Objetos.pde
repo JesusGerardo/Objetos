@@ -4,8 +4,6 @@ void setup(){
   size(700, 500);
 }
 void draw(){
-  //ob1.dibujar();
-  //ob2.dibujar();
-  ob2.estaDentro();
+  ob2.cambiarColor(ob2.estaDentro());
   ob2.dibujar();
 }
