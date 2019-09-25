@@ -1,4 +1,4 @@
-class Estrella{
+class Estrella implements Interfaz{
   private float x, y, radius1, radius2;
   private int nPoints;
   
@@ -9,7 +9,16 @@ class Estrella{
     this.radius2 = radius2;
     this.nPoints = nPoints;
   }
-  
+  public void arrastra(boolean e){
+    x = mouseX + dx;
+    y = mouseY + dy;
+  }
+  public void empiezaArrastre(boolean e){
+    dx = (x - mouseX);
+    dy = (y - mouseY);
+    arrastra(e);
+  }
+  public boolean estaDentro(){return false;}
   private void f() {
     float angle = TWO_PI / nPoints;
     float halfAngle = angle/2.0;

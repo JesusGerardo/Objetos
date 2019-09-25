@@ -12,5 +12,16 @@ class Imagen implements Interfaz{
     size(w, h);
     image(a, x, y);
   }
-  public void arrastrar(boolean e){}
+  public boolean estaDentro(){
+    return false;
+  }
+  public void arrastra(boolean e){
+    x = mouseX + dx;
+    y = mouseY + dy;
+  }
+  public void empiezaArrastre(boolean e){
+    dx = (x - mouseX);
+    dy = (y - mouseY);
+    arrastra(e);
+  }
 }

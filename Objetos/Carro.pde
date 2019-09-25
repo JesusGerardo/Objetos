@@ -29,7 +29,15 @@ class Carro implements Interfaz{
     }
     
   }
-  public void arrastrar(boolean e){}
+  public void arrastra(boolean e){
+    x = mouseX + dx;
+    y = mouseY + dy;
+  }
+  public void empiezaArrastre(boolean e){
+    dx = (x - mouseX);
+    dy = (y - mouseY);
+    arrastra(e);
+  }
   public void dibujar(){
     carcasa.dibujar();
     llantaIzq.dibujar();

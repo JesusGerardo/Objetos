@@ -5,10 +5,11 @@ void setup(){
 }
 void mousePressed() {
   ob2.empiezaArrastre(ob2.estaDentro());
+  ob2.dibujar();
 }
-void mouseReleased() {
+/*void mouseReleased() {
   ob2.empiezaArrastre(false);
-}
+}*/
 void draw(){
   ob2.cambiarColor(ob2.estaDentro());
   ob2.dibujar();

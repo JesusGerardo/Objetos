@@ -11,6 +11,7 @@ public class Figura implements Interfaz{
       _color = color(0,0,250);
     }
   }
+  public boolean estaDentro(){return false;}
   public void arrastra(boolean e){
     x = mouseX + dx;
     y = mouseY + dy;
