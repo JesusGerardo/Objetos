@@ -1,6 +1,7 @@
 class Estrella implements Interfaz{
   private float x, y, radius1, radius2;
   private int nPoints;
+  private float dx, dy;
   
   Estrella(float x, float y, float radius1, float radius2, int nPoints) {
     this.x = x;

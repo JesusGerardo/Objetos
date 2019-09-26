@@ -1,4 +1,4 @@
-public class Figura implements Interfaz{
+abstract public class Figura implements Interfaz{
   protected float x, y;
   protected float dx, dy;
   protected float w, h;
@@ -11,7 +11,6 @@ public class Figura implements Interfaz{
       _color = color(0,0,250);
     }
   }
-  public boolean estaDentro(){return false;}
   public void arrastra(boolean e){
     x = mouseX + dx;
     y = mouseY + dy;

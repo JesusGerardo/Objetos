@@ -1,5 +1,5 @@
 class Carro implements Interfaz{
-  
+  private float dx, dy;
   private float h;
   private float w;
   private float x, y;
@@ -83,5 +83,8 @@ class Carro implements Interfaz{
   }
   public void rotar(int or){
     this.or = or;
+  }
+  public boolean estaDentro(){
+    return false;
   }
 }

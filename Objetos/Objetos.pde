@@ -3,13 +3,13 @@ Circulo ob2 = new Circulo(300, 300, 70, color(0,0,250));
 void setup(){
   size(700, 500);
 }
-void mousePressed() {
+void mouseClicked() {
   ob2.empiezaArrastre(ob2.estaDentro());
   ob2.dibujar();
 }
-/*void mouseReleased() {
+void mouseReleased() {
   ob2.empiezaArrastre(false);
-}*/
+}
 void draw(){
   ob2.cambiarColor(ob2.estaDentro());
   ob2.dibujar();

@@ -2,6 +2,8 @@ class Gif implements Interfaz{
   private PImage a = loadImage("pato.gif");
   private float x, y;
   private int h, w;
+  private float dx, dy;
+  
   public Gif(float x, float y, int h, int w){
     this.x = x;
     this.y = y;
@@ -20,5 +22,8 @@ class Gif implements Interfaz{
     dx = (x - mouseX);
     dy = (y - mouseY);
     arrastra(e);
+  }
+  public boolean estaDentro(){
+    return false;
   }
 }
